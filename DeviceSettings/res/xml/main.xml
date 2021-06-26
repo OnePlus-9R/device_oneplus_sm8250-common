@@ -32,16 +32,6 @@
         android:key="graphics"
         android:title="@string/display_title">
 
-    <Preference
-            android:key="dc_dim"
-            android:enabled="true"
-            android:icon="@drawable/ic_dc_mode"
-            android:summary="@string/dc_mode_summary"
-            android:title="@string/dc_mode_title">
-            <intent
-                    android:action="android.settings.DC_DIMMING_SETTINGS" /> 
-     </Preference>
-
         <SwitchPreference
             android:key="auto_hbm"
             android:icon="@drawable/ic_autohbm_mode"
@@ -65,6 +55,12 @@
                 android:targetClass="org.havoc.device.DeviceSettings.kcal.KCalSettingsActivity"
                 android:targetPackage="org.havoc.device.DeviceSettings.kcal" />
        </Preference>
+
+       <SwitchPreference
+            android:key="dc"
+            android:icon="@drawable/ic_dc_mode"
+            android:summary="@string/dc_mode_summary"
+            android:title="@string/dc_mode_title" />
  
        <SwitchPreference
             android:key="hbm"
