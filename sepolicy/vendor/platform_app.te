@@ -19,6 +19,10 @@ allow platform_app vendor_default_prop:file { open getattr map };
 allow platform_app default_android_service:service_manager { find };
 allow platform_app hal_camera_default:binder { call transfer };
 
+allow platform_app sysfs_leds:dir { search };
+allow platform_app vendor_default_prop:file { open getattr map };
+allow platform_app sysfs_oem:file { write };
+
 get_prop(platform_app, ctl_default_prop)
 r_dir_file(platform_app, oem_file)
 
