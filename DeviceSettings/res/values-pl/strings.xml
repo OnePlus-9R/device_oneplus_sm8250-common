@@ -52,11 +52,6 @@
     <string name="proximity_sensor_title">Czujnik zbliżeniowy</string>
     <string name="pocket_gesture_title">Tryb kieszeniowy</string>
     <string name="pocket_gesture_summary">Pulsujące powiadomienia po wyciągnięciu z kieszeni</string>
-    <!-- Dolby -->
-    <string name="dolby_category">Dolby</string>
-    <string name="dolby_title">Dolby Atmos</string>
-    <string name="dolby_summary">Skonfiguruj wyjście audio na podstawie treści multimedialnych</string>
-    <string name="dolby_info">Po włączeniu/wyłączeniu Dolby Atmos, użyj pauzy w odtwarzaniu mediów aby zmiany stały się skuteczne.</string>
     <!-- FPS Info -->
     <string name="fps_title">Informacje o liczniku klatek</string>
     <string name="fps_info_title">Nakładka licznika klatek</string>

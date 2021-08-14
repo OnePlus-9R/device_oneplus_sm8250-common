@@ -52,11 +52,6 @@
     <string name="proximity_sensor_title">Sensor de proximidad</string>
     <string name="pocket_gesture_title">Bolsillo</string>
     <string name="pocket_gesture_summary">Notificaciones de pulso al sacar del bolsillo</string>
-    <!-- Dolby -->
-    <string name="dolby_category">Dolby</string>
-    <string name="dolby_title">Dolby Atmos</string>
-    <string name="dolby_summary">Configurar la salida de audio basada en el contenido multimedia</string>
-    <string name="dolby_info">Cuando active/deshabilite Dolby Atmos, pause/reproduzca medios para que los cambios surtan efecto.</string>
     <!-- FPS Info -->
     <string name="fps_title">Info FPS</string>
     <string name="fps_info_title">Superposición de FPS</string>

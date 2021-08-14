@@ -52,11 +52,6 @@
     <string name="proximity_sensor_title">Датчик приближения</string>
     <string name="pocket_gesture_title">Карманный</string>
     <string name="pocket_gesture_summary">Пульсирующие уведомления при извлечении из кармана</string>
-    <!-- Dolby -->
-    <string name="dolby_category">Dolby</string>
-    <string name="dolby_title">Dolby Atmos</string>
-    <string name="dolby_summary">Настраивать аудиовыход на основе медиаконтента</string>
-    <string name="dolby_info">При включении/выключении Dolby Atmos приостанавить/продолжить воспроизведение, чтобы изменения вступили в силу.</string>
     <!-- FPS Info -->
     <string name="fps_title">Информация о FPS</string>
     <string name="fps_info_title">Наложение FPS</string>

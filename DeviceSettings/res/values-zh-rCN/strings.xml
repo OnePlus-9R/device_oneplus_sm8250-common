@@ -52,11 +52,6 @@
     <string name="proximity_sensor_title">距离传感器</string>
     <string name="pocket_gesture_title">口袋</string>
     <string name="pocket_gesture_summary">从口袋中移除时显示通知</string>
-    <!-- Dolby -->
-    <string name="dolby_category">音频</string>
-    <string name="dolby_title">杜比全景声</string>
-    <string name="dolby_summary">根据播放的媒体内容调整音频输出</string>
-    <string name="dolby_info">当开启/关闭杜比全景声后，请手动暂停一次正在播放的媒体使开关生效</string>
     <!-- FPS Info -->
     <string name="fps_title">FPS 帧率显示</string>
     <string name="fps_info_title">FPS 叠加层</string>
