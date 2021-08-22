@@ -20,7 +20,7 @@
         android:key="slider"
         android:title="@string/slider_title">
 
-        <com.havoc.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="mute_media"
             android:icon="@drawable/ic_audio_media"
             android:title="@string/mute_media_title"
@@ -42,7 +42,7 @@
                     android:action="android.settings.DC_DIMMING_SETTINGS" /> 
      </Preference>
 
-        <com.havoc.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="auto_hbm"
             android:icon="@drawable/ic_autohbm_mode"
             android:summary="@string/auto_hbm_summary"
@@ -66,7 +66,7 @@
                 android:targetPackage="org.havoc.device.DeviceSettings.kcal" />
        </Preference>
  
-       <com.havoc.support.preferences.SwitchPreference
+       <SwitchPreference
             android:key="hbm"
             android:icon="@drawable/ic_hbm_mode"
             android:summary="@string/hbm_mode_summary"
@@ -93,7 +93,7 @@
         android:key="fps"
         android:title="@string/fps_title">
 		
-        <com.havoc.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="fps_info"
             android:icon="@drawable/ic_fps_overlay"
             android:title="@string/fps_info_title"
