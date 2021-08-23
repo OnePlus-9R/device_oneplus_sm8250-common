@@ -1,5 +1,5 @@
 // let's make nice and clear,
-// proper seekbar preference.
+// custom seekbar preference.
 
 package org.havoc.device.DeviceSettings;
 
@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 import org.havoc.device.DeviceSettings.R;
 
-public class ProperSeekBarPreference extends Preference implements SeekBar.OnSeekBarChangeListener {
+public class CustomSeekBarPreference extends Preference implements SeekBar.OnSeekBarChangeListener {
     protected final String TAG = getClass().getName();
     private static final String SETTINGS_NS = "http://schemas.android.com/apk/res/com.android.settings";
     protected static final String ANDROIDNS = "http://schemas.android.com/apk/res/android";
@@ -48,17 +48,17 @@ public class ProperSeekBarPreference extends Preference implements SeekBar.OnSee
     protected boolean mTrackingTouch = false;
     protected int mTrackingValue;
 
-    public ProperSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public CustomSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
 
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ProperSeekBarPreference);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CustomSeekBarPreference);
         try {
-            mShowSign = a.getBoolean(R.styleable.ProperSeekBarPreference_showSign, mShowSign);
-            String units = a.getString(R.styleable.ProperSeekBarPreference_units);
+            mShowSign = a.getBoolean(R.styleable.CustomSeekBarPreference_showSign, mShowSign);
+            String units = a.getString(R.styleable.CustomSeekBarPreference_units);
             if (units != null)
                 mUnits = " " + units;
-            mContinuousUpdates = a.getBoolean(R.styleable.ProperSeekBarPreference_continuousUpdates, mContinuousUpdates);
-            String defaultValueText = a.getString(R.styleable.ProperSeekBarPreference_defaultValueText);
+            mContinuousUpdates = a.getBoolean(R.styleable.CustomSeekBarPreference_continuousUpdates, mContinuousUpdates);
+            String defaultValueText = a.getString(R.styleable.CustomSeekBarPreference_defaultValueText);
             mDefaultValueTextExists = defaultValueText != null && !defaultValueText.isEmpty();
             if (mDefaultValueTextExists) {
                 mDefaultValueText = defaultValueText;
@@ -91,17 +91,17 @@ public class ProperSeekBarPreference extends Preference implements SeekBar.OnSee
         setLayoutResource(R.layout.preference_custom_seekbar);
     }
 
-    public ProperSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CustomSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr) {
         this(context, attrs, defStyleAttr, 0);
     }
 
-    public ProperSeekBarPreference(Context context, AttributeSet attrs) {
+    public CustomSeekBarPreference(Context context, AttributeSet attrs) {
         this(context, attrs, TypedArrayUtils.getAttr(context,
                 androidx.preference.R.attr.preferenceStyle,
                 android.R.attr.preferenceStyle));
     }
 
-    public ProperSeekBarPreference(Context context) {
+    public CustomSeekBarPreference(Context context) {
         this(context, null);
     }
 
@@ -215,9 +215,9 @@ public class ProperSeekBarPreference extends Preference implements SeekBar.OnSee
             if (!mTrackingTouch || mContinuousUpdates) {
                 if (mDefaultValueTextExists && mDefaultValueExists && mValue == mDefaultValue) {
                     mValueTextView.setText(mDefaultValueText + " (" +
-                        getContext().getString(R.string.proper_seekbar_default_value) + ")");
+                        getContext().getString(R.string.custom_seekbar_default_value) + ")");
                 } else {
-                    mValueTextView.setText(getContext().getString(R.string.proper_seekbar_value, getTextValue(mValue)) +
+                    mValueTextView.setText(getContext().getString(R.string.custom_seekbar_value, getTextValue(mValue)) +
                         (mDefaultValueExists && mValue == mDefaultValue ? " (" +
                         getContext().getString(R.string.custom_seekbar_default_value) + ")" : ""));
                 }
@@ -225,7 +225,7 @@ public class ProperSeekBarPreference extends Preference implements SeekBar.OnSee
                 if (mDefaultValueTextExists && mDefaultValueExists && mTrackingValue == mDefaultValue) {
                     mValueTextView.setText("[" + mDefaultValueText + "]");
                 } else {
-                    mValueTextView.setText(getContext().getString(R.string.proper_seekbar_value, "[" + getTextValue(mTrackingValue) + "]"));
+                    mValueTextView.setText(getContext().getString(R.string.custom_seekbar_value, "[" + getTextValue(mTrackingValue) + "]"));
                 }
             }
         }

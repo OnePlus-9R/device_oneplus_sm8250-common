@@ -26,7 +26,7 @@ import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreference;
 
 import org.havoc.device.DeviceSettings.R;
-import org.havoc.device.DeviceSettings.ProperSeekBarPreference;
+import org.havoc.device.DeviceSettings.CustomSeekBarPreference;
 import org.havoc.device.DeviceSettings.SecureSettingListPreference;
 
 public class KCalSettings extends PreferenceFragment implements
@@ -34,13 +34,13 @@ public class KCalSettings extends PreferenceFragment implements
 
     private final FileUtils mFileUtils = new FileUtils();
     private SwitchPreference mEnabled;
-    private ProperSeekBarPreference mRed;
-    private ProperSeekBarPreference mGreen;
-    private ProperSeekBarPreference mBlue;
-    private ProperSeekBarPreference mSaturation;
-    private ProperSeekBarPreference mValue;
-    private ProperSeekBarPreference mContrast;
-    private ProperSeekBarPreference mHue;
+    private CustomSeekBarPreference mRed;
+    private CustomSeekBarPreference mGreen;
+    private CustomSeekBarPreference mBlue;
+    private CustomSeekBarPreference mSaturation;
+    private CustomSeekBarPreference mValue;
+    private CustomSeekBarPreference mContrast;
+    private CustomSeekBarPreference mHue;
     private SharedPreferences mPrefs;    
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -59,31 +59,31 @@ public class KCalSettings extends PreferenceFragment implements
         mEnabled.setChecked(mPrefs.getBoolean(KCalSettings.PREF_ENABLED, false));        
         mEnabled.setOnPreferenceChangeListener(this);
 
-        mRed = (ProperSeekBarPreference) findPreference(PREF_RED);
+        mRed = (CustomSeekBarPreference) findPreference(PREF_RED);
         mRed.setValue(mPrefs.getInt(PREF_RED, mRed.getValue()));        
         mRed.setOnPreferenceChangeListener(this);
 
-        mGreen = (ProperSeekBarPreference) findPreference(PREF_GREEN);
+        mGreen = (CustomSeekBarPreference) findPreference(PREF_GREEN);
         mGreen.setValue(mPrefs.getInt(PREF_GREEN, mGreen.getValue()));                
         mGreen.setOnPreferenceChangeListener(this);
 
-        mBlue = (ProperSeekBarPreference) findPreference(PREF_BLUE);
+        mBlue = (CustomSeekBarPreference) findPreference(PREF_BLUE);
         mBlue.setValue(mPrefs.getInt(PREF_BLUE, mBlue.getValue()));                
         mBlue.setOnPreferenceChangeListener(this);
 
-        mSaturation = (ProperSeekBarPreference) findPreference(PREF_SATURATION);
+        mSaturation = (CustomSeekBarPreference) findPreference(PREF_SATURATION);
         mSaturation.setValue(mPrefs.getInt(PREF_SATURATION, mSaturation.getValue()));                   
         mSaturation.setOnPreferenceChangeListener(this);
 
-        mValue = (ProperSeekBarPreference) findPreference(PREF_VALUE);
+        mValue = (CustomSeekBarPreference) findPreference(PREF_VALUE);
         mValue.setValue(mPrefs.getInt(PREF_VALUE, mValue.getValue()));                
         mValue.setOnPreferenceChangeListener(this);
 
-        mContrast = (ProperSeekBarPreference) findPreference(PREF_CONTRAST);
+        mContrast = (CustomSeekBarPreference) findPreference(PREF_CONTRAST);
         mContrast.setValue(mPrefs.getInt(PREF_CONTRAST, mContrast.getValue()));                
         mContrast.setOnPreferenceChangeListener(this);
 
-        mHue = (ProperSeekBarPreference) findPreference(PREF_HUE);
+        mHue = (CustomSeekBarPreference) findPreference(PREF_HUE);
         mHue.setValue(mPrefs.getInt(PREF_HUE, mHue.getValue()));                
         mHue.setOnPreferenceChangeListener(this);
     }                                                            

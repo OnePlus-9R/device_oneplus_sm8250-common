@@ -19,7 +19,7 @@ package org.havoc.device.DeviceSettings;
 import android.content.Context;
 import android.util.AttributeSet;
 
-public class SecureSettingCustomSeekBarPreference extends ProperSeekBarPreference {
+public class SecureSettingCustomSeekBarPreference extends CustomSeekBarPreference {
 
     public SecureSettingCustomSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);

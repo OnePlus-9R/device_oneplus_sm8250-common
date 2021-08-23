@@ -86,8 +86,8 @@ public class DeviceSettings extends PreferenceFragment
     private static TwoStatePreference mMuteMedia;
     private Preference mKcal;
 
-    private ProperSeekBarPreference mVibratorStrengthPreference;
-    private ProperSeekBarPreference mFpsInfoTextSizePreference;
+    private CustomSeekBarPreference mVibratorStrengthPreference;
+    private CustomSeekBarPreference mFpsInfoTextSizePreference;
 
     private Vibrator mVibrator;
 
@@ -137,7 +137,7 @@ public class DeviceSettings extends PreferenceFragment
         mFpsInfoColor = (ListPreference) findPreference(KEY_FPS_INFO_COLOR);
         mFpsInfoColor.setOnPreferenceChangeListener(this);
 
-        mFpsInfoTextSizePreference = (ProperSeekBarPreference) findPreference(KEY_FPS_INFO_TEXT_SIZE);
+        mFpsInfoTextSizePreference = (CustomSeekBarPreference) findPreference(KEY_FPS_INFO_TEXT_SIZE);
         mFpsInfoTextSizePreference.setOnPreferenceChangeListener(this);
 
         mMuteMedia = (TwoStatePreference) findPreference(KEY_MUTE_MEDIA);
@@ -154,7 +154,7 @@ public class DeviceSettings extends PreferenceFragment
         mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
 
-        mVibratorStrengthPreference =  (ProperSeekBarPreference) findPreference(KEY_VIBSTRENGTH);
+        mVibratorStrengthPreference =  (CustomSeekBarPreference) findPreference(KEY_VIBSTRENGTH);
         if (Utils.fileWritable(FILE_LEVEL)) {
             mVibratorStrengthPreference.setValue(sharedPrefs.getInt(KEY_VIBSTRENGTH,
                 Integer.parseInt(Utils.getFileValue(FILE_LEVEL, DEFAULT))));
