@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2021 Havoc-OS
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+<!--
+    Copyright (c) 2015 The CyanogenMod Project
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+        http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="24dp"
     android:height="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24"
+    android:viewportWidth="490.2"
+    android:viewportHeight="490.2"
     android:tint="?android:attr/colorControlNormal">
+
     <path
         android:fillColor="#000"
-        android:pathData="M11.66973,3.88367l-0.03142,2.22706l-9.05864,0l0,15.29573l15.31215,0l0,-9.08373l2.16218,0l0,11.25228l-19.6365,0l0,-19.69135l11.25223,0l0,0.00001zm8.38427,-3.63367l0,3.63367l3.62351,0l0,2.22706l-3.62351,0l0,3.63338l-2.16218,0l0,-3.63338l-3.68199,0l0,-2.22706l3.68199,0l0,-3.63367l2.16218,0zm-10.63634,18.22624l0,-6.15351l-2.04552,0l0,-1.5824l0.23362,0c0.64296,0 1.16895,-0.117 1.51952,-0.41008c0.35086,-0.29308 0.58447,-0.82044 0.58447,-1.4651l1.92857,0l0,9.61109l-2.22065,0z" />
+        android:pathData="M418.5,418.5c95.6-95.6,95.6-251.2,0-346.8s-251.2-95.6-346.8,0s-95.6,251.2,0,346.8S322.9,514.1,418.5,418.5z M89,89 c86.1-86.1,226.1-86.1,312.2,0s86.1,226.1,0,312.2s-226.1,86.1-312.2,0S3,175.1,89,89z" />
+    <path
+        android:fillColor="#000"
+        android:pathData="M245.1,336.9c3.4,0,6.4-1.4,8.7-3.6c2.2-2.2,3.6-5.3,3.6-8.7v-67.3h67.3c3.4,0,6.4-1.4,8.7-3.6c2.2-2.2,3.6-5.3,3.6-8.7 c0-6.8-5.5-12.3-12.2-12.2h-67.3v-67.3c0-6.8-5.5-12.3-12.2-12.2c-6.8,0-12.3,5.5-12.2,12.2v67.3h-67.3c-6.8,0-12.3,5.5-12.2,12.2 c0,6.8,5.5,12.3,12.2,12.2h67.3v67.3C232.8,331.4,238.3,336.9,245.1,336.9z" />
 </vector>
